@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:fluttertoast/fluttertoast.dart';
 
-import 'package:logindice/main.dart';
 
 class Dice extends StatefulWidget {
   @override
@@ -57,7 +56,7 @@ class _DiceState extends State<Dice> {
                       leftDice = Random().nextInt(6)+1;
                       rightDice = Random().nextInt(6)+1;
                     });
-                    showToast("Left dice:{$leftDice}, Right dice:{$rightDice}");
+                    showToast("왼쪽주사위: {$leftDice}, 오른쪽주사위: {$rightDice}");
                   }),
             )
           ],
